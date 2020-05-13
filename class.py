@@ -6,5 +6,5 @@ class Apple:
 	def __str__(self):
 		return "This apple is {} and it's flavor is {}.".format(self.color, self.flavor)
 
-name = Apple("green", "bitter")
-print(name)
+shubham = Apple("green", "bitter")
+print(shubham)
