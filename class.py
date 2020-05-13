@@ -1,4 +1,4 @@
-class Apple:
+class Fruit:
 	"""apple class describes flavor and color"""
 	def __init__(self, color, flavor):
 		self.color = color
@@ -6,5 +6,3 @@ class Apple:
 	def __str__(self):
 		return "This apple is {} and it's flavor is {}.".format(self.color, self.flavor)
 
-name = Apple("green", "bitter")
-print(name)
