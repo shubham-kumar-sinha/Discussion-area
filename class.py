@@ -8,3 +8,4 @@ class Repository:
 		for package in self.packages.values():
 			result += package.total_size
 		return result
+
