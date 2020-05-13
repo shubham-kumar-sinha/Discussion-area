@@ -1,10 +1,10 @@
-class Apple:
-	"""apple class describes flavor and color"""
-	def __init__(self, color, flavor):
-		self.color = color
-		self.flavor = flavor
-	def __str__(self):
-		return "This apple is {} and it's flavor is {}.".format(self.color, self.flavor)
-
-name = Apple("green", "bitter")
-print(name)
+class Repository:
+	def __init__(self):
+		self.packages = {}
+	def add_package(self, package):
+		self.packages[package.name] = package
+	def total_size(self):
+		result = 0
+		for package in self.packages.values():
+			result += package.total_size
+		return result
